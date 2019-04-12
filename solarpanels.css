@@ -1,0 +1,19 @@
+#overall-map, #field1-map, #field2-map, #field3-map, #customfield-map {
+  height: 500px;
+  margin: 20px;
+}
+#utopia {
+  font-family: 'Pacifico', cursive;
+}
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+}
+body {
+  background: #eeeeee;
+}
+#main-heading {
+  text-align: center;
+}
+.container {
+  padding: 16px;
+}

@@ -1,0 +1,24 @@
+#overall-map {
+  height: 500px;
+  margin: 20px;
+}
+
+#utopia {
+  font-family: 'Pacifico', cursive;
+}
+
+#main-heading {
+  text-align: center;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+}
+
+.container {
+  padding: 16px;
+}
+
+body {
+  background: #eeeeee;
+}

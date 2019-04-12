@@ -1,0 +1,32 @@
+#myBar, #indiaAvgBar, #nittAvgBar {
+  color: black;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+.container {
+  padding: 16px;
+}
+#rightColumn {
+  background: #EFEFEF;
+  border-radius: 10px;
+  border: solid 2px black;
+  margin: 8px;
+}
+#main-heading {
+  text-align: center;
+}
+#elec-a {
+  padding: 8px;
+}
+#utopia {
+  font-family: 'Pacifico', cursive;
+}
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+}
+body {
+  background: #eeeeee;
+}
+.card {
+  padding-top: 8px;
+}

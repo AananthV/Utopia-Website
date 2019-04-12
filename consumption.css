@@ -1,0 +1,7 @@
+#overall-map, #academic-map, #hostel-map, #residential-map {
+  height: 500px;
+}
+
+.container {
+  padding: 16px;
+}

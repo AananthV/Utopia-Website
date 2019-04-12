@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Solar Panels</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <link rel="stylesheet" href="areaSelect.css">
+    <link rel="stylesheet" href="leaflet-measure.css">
+    <link rel="stylesheet" href="solarpanels.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-success">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-solar-panel"></i> Utopia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="consumption.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Consumption
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="consumption.html">Overall</a>
+              <a class="dropdown-item" href="consumption.html#academic">Academic</a>
+              <a class="dropdown-item" href="consumption.html#hostel">Hostel</a>
+              <a class="dropdown-item" href="consumption.html#residential">Residential</a>
+            </div>
+          </li>-->
+          <li class="nav-item dropdown active active">
+            <a class="nav-link dropdown-toggle" href="solarpanels.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Solar
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="solarpanels.html">Overall</a>
+              <a class="dropdown-item" href="solarpanels.html#field1">Field 1</a>
+              <a class="dropdown-item" href="solarpanels.html#field2">Field 2</a>
+              <a class="dropdown-item" href="solarpanels.html#field3">Field 3</a>
+              <a class="dropdown-item" href="solarpanels.html#customField">Custom Field Maker</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carbonfootprint.html">Carbon Footprint Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container bg-light">
+      <h1 id="main-heading">Solar Panels</h1>
+      <hr>
+      <div id="overall">
+        <h4>Overall</h4>
+        <div id="overall-map"></div>
+        <br>
+        <p>The formation of solar fields within the NITT campus is highly risky due to the very high movement of both people and wildlife. Although NITT is a very well planned college, there is a stark absence of free land sufficiently away from the Residential or Hostel zones. This puts the need for establishment of proper fencing and other barriers as high priority.</p>
+        <p>Benchmark investment in 2015 for a solar plant in India is about Rs. 6.1 Crores/MW. This includes all the capital expenses. Operations & Maintenance annual contracts are typically about Rs. 5-6 Lakhs/MW without trackers and 7-8 Lakhs/MW with trackers, usually escalating annually at 5%. </p>
+      </div>
+      <div id="field1">
+        <hr>
+        <h4>Field 1</h4>
+        <div id="field1-map"></div>
+        <br>
+        <p>
+          <strong>Area:</strong> 1, 03,546 m2 <br>
+  		    <strong>Perimeter:</strong> 1413.48 m <br>
+          <strong>Electricity generation:</strong> 310.12 Lakh kWh per year (329.9% of 2018 consumption) <br>
+          <strong>Establishment cost (approx.):</strong> 38.635 crores, with yearly expenditure of 300 lakhs. <br>
+          <strong>Cost saved per year:</strong> 6.2 crores + sale of excess electricity. <br>
+          <strong>Payback period:</strong> 3 years.
+          <ul>
+            <li>Too close to hostel grouping.</li>
+            <li>Probable disturbance to NITT wildlife such as cow and birds.</li>
+            <li>Setup would require building roads for transportation.</li>
+            <li>Generating 300% of requirement would mean that NITT can sell the excess for upto 12 crores every year.</li>
+          </ul>
+        </p>
+      </div>
+      <div id="field2">
+        <hr>
+        <h4>Field 2</h4>
+        <div id="field2-map"></div>
+        <br>
+        <p>
+        <strong>Area:</strong> 63,195.6 m<sup>2</sup> <br>
+        <strong>Perimeter:</strong> 1077.03 m <br>
+        <strong>Electricity generation:</strong> 189 Lakh kWh per year (203% of 2018 consumption) <br>
+        <strong>Establishment cost (approx.):</strong> 22.78 crores, with yearly expenditure of 180lakhs. <br>
+        <strong>Cost saved per year:</strong> 6.2 crores sale of excess electricity. <br>
+        <strong>Payback period:</strong> 3 years.
+        </p>
+        <ul>
+          <li>No vegetation for removal.</li>
+          <li>Present in sparsely used region.</li>
+          <li>Generating 200% of requirement would mean that NITT can sell the excess for upto 6 crores every year.</li>
+          <li>Safest and most viable setup location within campus.</li>
+        </ul>
+      </div>
+      <div id="field3">
+        <hr>
+        <h4>Field 3</h4>
+        <div id="field3-map"></div>
+        <br>
+        <p>
+          <strong>Area:</strong> 34,147.76 m<sup>2</sup> <br>
+          <strong>Perimeter:</strong> 892.66 m <br>
+          <strong>Electricity generation:</strong> 102 Lakh kWh per year (109% of 2018 consumption) <br>
+          <strong>Establishment cost (approx.):</strong> 12.28 crores, with yearly expenditure of 96lakhs. <br>
+          <strong>Cost saved per year:</strong> 6.2 crores. <br>
+          <strong>Payback period:</strong> 1.5 years.
+        </p>
+        <ul>
+        <li>Too close to NITT perimeter and the villages outside.</li>
+        <li>Too close to sewage plan and Teak forest.</li>
+        <li>Cheapest of all proposed regions, would provide required amount of electricity.</li>
+        </ul>
+      </div>
+      <div id="customField">
+        <hr>
+        <h4>Custom Field Maker</h4>
+        <p>Use our applet below to analyse the Area, Power Output and Cost of any region of your choice</p>
+        <div id="customfield-map"></div>
+        <br>
+      </div>
+    </div>
+    <script src="areaSelect.js" charset="utf-8"></script>
+    <script src="leaflet-measure.js" type="text/javascript"></script>
+    <script src="solarpanels.js" type="text/javascript"></script>
+  </body>
+</html>

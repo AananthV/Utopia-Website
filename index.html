@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-success">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-solar-panel"></i> Utopia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="consumption.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Consumption
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="consumption.html">Overall</a>
+              <a class="dropdown-item" href="consumption.html#academic">Academic</a>
+              <a class="dropdown-item" href="consumption.html#hostel">Hostel</a>
+              <a class="dropdown-item" href="consumption.html#residential">Residential</a>
+            </div>
+          </li>-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="solarpanels.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Solar
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="solarpanels.html">Overall</a>
+              <a class="dropdown-item" href="solarpanels.html#field1">Field 1</a>
+              <a class="dropdown-item" href="solarpanels.html#field2">Field 2</a>
+              <a class="dropdown-item" href="solarpanels.html#field3">Field 3</a>
+              <a class="dropdown-item" href="solarpanels.html#customField">Custom Field Maker</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carbonfootprint.html">Carbon Footprint Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container bg-light">
+      <h1 id="main-heading"><span id="utopia">Utopia</span> @ NITT</h1>
+      <div id="overall-map"></div>
+      <hr>
+      <p><h2>Background</h2>
+      <p>The National Institute of Technology (formerly known as Regional Engineering College) Tiruchirappalli, situated in the heart of Tamil Nadu on the banks of river Cauvery, was started as a joint and co-operative venture of the Government of India and the Government of Tamil Nadu in 1964 with a view to catering to the needs of man-power in technology for the country. The college has been conferred with autonomy in financial and administrative matters to achieve rapid development. Because of this rich experience, this institution was granted Deemed University Status with the approval of the UGC/AICTE and Govt. of India in the year 2003 and renamed as National Institute of Technology. NIT-T was registered under Societies Registration Act XXVII of 1975. The progressive management of NITT recognizing the vital importance of energy as precious resource has been visibly active in implementing energy conservation measures. Our team prepared this website to accompany our report that encapsulates the field measurements, data collection, analysis, and energy conservation options for the field studies carried out during the period of March 2019.</p></p>
+      <hr>
+      <h2>Climate</h2>
+      <p>NIT Tiruchirappalli experiences an overall very hot and dry climate throughout the year, making Solar Energy the most efficient source for viable renewable energy for the required demand. However an overall view of all factors such as temperature, clouds, precipitation, wind, etc. needs to be considered before jumping to such conclusion. &bull; Average Max/Min temperature: 33.5&deg;C/23.9&deg;C &bull; Annual Global Isolation: 1946 kWh/m2/year &bull; Tilt Angle for Solar PV: 9&deg; &bull; Capacity Utilization Factor: 16.5%</p>
+      <p style="text-align: right;">(By ISRO 1990-2017)</p>
+      <ul>
+        <li>
+          <h3>Average Temperature and Precipitation:</h3>
+          <p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="chart.svg" width="491" height="250" /></p>
+          <p>The generalised plot (data from 1990-2018) provides with the overview on what sort of climate the region experiences. Temperature fluctuates but remains constantly above 30&deg;C for the days and 20&deg;C for nights. Precipitation is concentrated towards the end of the calendar year, especially October and November.&nbsp;</p>
+        </li>
+        <li>
+          <h3>Precipitation:</h3>
+          <p style="text-align: center;"><img src="chart (3).svg" alt="" width="441" height="250" /></p>
+          <p>It is to be noted that October and November has similar number of dry days as to September and June, thereby concluding that the quantity of downpour is concentrated to a specific cluster of days.</p>
+        </li>
+        <li>
+          <h3>Temperature:</h3>
+          <p style="text-align: center;"><img src="chart (2).svg" alt="" width="480" height="250" /></p>
+          <p>The overall temperature cluster remains similar to the Tamil Nadu region and does not bare any new conclusions.</p>
+        </li>
+        <li>
+          <h3>Clouds:</h3>
+          <p style="text-align: center;"><img src="chart (1).svg" alt="" width="516" height="250" /></p>
+          <p>Clouds provide greatest challenge to establishments of solar farms and/or solar roofs. The region of NITT, though it provides higher temperatures, does possess a lot of partly-cloudy days, hampering the efficiency of solar panels.&nbsp;&nbsp;</p>
+        </li>
+        <li>
+          <h3>Wind:</h3>
+          <p style="text-align: center;"><img src="chart (4).svg" alt="" width="457" height="250" /></p>
+          <p>Clearly NITT does not provide ideal situation for establishment of Wind Farms for generation of electricity.</p>
+        </li>
+        <li>
+          <h3>Wind Rose Diagram:</h3>
+          <p style="text-align: center;"><u><img src="chart (5).svg" alt="" width="281" height="250" /></u></p>
+          <p>West-South-West provides the highest frequency for wind farm establishment, however as state earlier wind speeds would not yield profitable results.</p>
+        </li>
+      </ul>
+      <hr>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.container {
+  padding: 16px;
+}
+#utopia {
+  font-family: 'Pacifico', cursive;
+}
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+}
+body {
+  background: #eeeeee;
+}
+#main-heading {
+  text-align: center;
+}
+.about-data {
+  padding-left: 32px;
+}
